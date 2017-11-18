@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.demo.entidades;
+package com.demo.dominio;
 
 /**
  *
@@ -15,6 +15,11 @@ public class cliente {
     private String apellido;
     private String correo;
     private String identificacion;
+
+    public cliente() {
+    }
+    
+    
 
     public cliente(int id_cliente, String nombre, String apellido, String correo, String identificacion) {
         this.id_cliente = id_cliente;

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.demo.entidades;
+package com.demo.dominio;
 
 import java.util.List;
 
@@ -17,9 +17,13 @@ public class user {
     private String nick;
     private String password;
     private String rol;
-    private Boolean activo;
+    private boolean activo;
 
-    public user(int id_user, List<empleado> empleado, String nick, String password, String rol, Boolean activo) {
+    public user() {
+    }
+
+    
+    public user(int id_user, List<empleado> empleado, String nick, String password, String rol, boolean activo) {
         this.id_user = id_user;
         this.empleado = empleado;
         this.nick = nick;
@@ -68,11 +72,11 @@ public class user {
         this.rol = rol;
     }
 
-    public Boolean getActivo() {
+    public boolean getActivo() {
         return activo;
     }
 
-    public void setActivo(Boolean activo) {
+    public void setActivo(boolean activo) {
         this.activo = activo;
     }
     

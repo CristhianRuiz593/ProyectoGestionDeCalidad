@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.demo.entidades;
+package com.demo.dominio;
 
 /**
  *
@@ -17,6 +17,11 @@ public class empleado {
     private String correo;
     private String direccion;
     private String telefono;
+
+    public empleado() {
+    }
+    
+   
 
     public empleado(int id_empleado, String nombre, String apellido, String cedulaIdentidad, String correo, String direccion, String telefono) {
         this.id_empleado = id_empleado;

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.demo.entidades;
+package com.demo.dominio;
 
 /**
  *
@@ -19,6 +19,10 @@ public class proveedor {
     private int celular;
     private String direccion;
     private String correo;
+
+    public proveedor() {
+    }
+    
 
     public proveedor(int id_proveedor, String nombre, String apellido, String empresa, String ruc, int telefono, int celular, String direccion, String correo) {
         this.id_proveedor = id_proveedor;
