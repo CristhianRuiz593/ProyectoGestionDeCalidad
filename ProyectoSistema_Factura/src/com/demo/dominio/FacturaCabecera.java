@@ -9,13 +9,12 @@ import java.sql.Date;
 import java.util.List;
 
 /**
- *
  * @author Denisse Bailon
  */
-public class facturaCabezera {
+public class FacturaCabecera {
     private int id_facturaCab;
-    private List <cliente> cliente;
-    private List <empleado> empleado;
+    private List <Cliente> cliente;
+    private List <Empleado> empleado;
     private Date fecha;
     private String Telefono;
     private String direccion;
@@ -24,11 +23,11 @@ public class facturaCabezera {
     private double iva;
     private double totalPagar;
 
-    public facturaCabezera() {
+    public FacturaCabecera() {
     }
     
 
-    public facturaCabezera(int id_facturaCab, List<cliente> cliente, List<empleado> empleado, Date fecha, String Telefono, String direccion, double descuento, double subtotal, double iva, double totalPagar) {
+    public FacturaCabecera(int id_facturaCab, List<Cliente> cliente, List<Empleado> empleado, Date fecha, String Telefono, String direccion, double descuento, double subtotal, double iva, double totalPagar) {
         this.id_facturaCab = id_facturaCab;
         this.cliente = cliente;
         this.empleado = empleado;
@@ -49,19 +48,19 @@ public class facturaCabezera {
         this.id_facturaCab = id_facturaCab;
     }
 
-    public List<cliente> getCliente() {
+    public List<Cliente> getCliente() {
         return cliente;
     }
 
-    public void setCliente(List<cliente> cliente) {
+    public void setCliente(List<Cliente> cliente) {
         this.cliente = cliente;
     }
 
-    public List<empleado> getEmpleado() {
+    public List<Empleado> getEmpleado() {
         return empleado;
     }
 
-    public void setEmpleado(List<empleado> empleado) {
+    public void setEmpleado(List<Empleado> empleado) {
         this.empleado = empleado;
     }
 

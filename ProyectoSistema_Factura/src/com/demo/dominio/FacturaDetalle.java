@@ -11,18 +11,18 @@ import java.util.List;
  *
  * @author Denisse Bailon
  */
-public class detalleFactura {
+public class FacturaDetalle {
     private int id_detalleFactura;
-    private List <facturaCabezera> facturaCabezera;
-    private List <articulo> articulo;
+    private List <FacturaCabecera> facturaCabezera;
+    private List <Articulo> articulo;
     private int cantidad;
     private double precioUnitario;
 
-    public detalleFactura() {
+    public FacturaDetalle() {
     }
     
 
-    public detalleFactura(int id_detalleFactura, List<facturaCabezera> facturaCabezera, List<articulo> articulo, int cantidad, double precioUnitario) {
+    public FacturaDetalle(int id_detalleFactura, List<FacturaCabecera> facturaCabezera, List<Articulo> articulo, int cantidad, double precioUnitario) {
         this.id_detalleFactura = id_detalleFactura;
         this.facturaCabezera = facturaCabezera;
         this.articulo = articulo;
@@ -38,19 +38,19 @@ public class detalleFactura {
         this.id_detalleFactura = id_detalleFactura;
     }
 
-    public List<facturaCabezera> getFacturaCabezera() {
+    public List<FacturaCabecera> getFacturaCabezera() {
         return facturaCabezera;
     }
 
-    public void setFacturaCabezera(List<facturaCabezera> facturaCabezera) {
+    public void setFacturaCabezera(List<FacturaCabecera> facturaCabezera) {
         this.facturaCabezera = facturaCabezera;
     }
 
-    public List<articulo> getArticulo() {
+    public List<Articulo> getArticulo() {
         return articulo;
     }
 
-    public void setArticulo(List<articulo> articulo) {
+    public void setArticulo(List<Articulo> articulo) {
         this.articulo = articulo;
     }
 
